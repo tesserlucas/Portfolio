@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Este é um projeto de portfólio pessoal desenvolvido com HTML, CSS e JavaScript. O objetivo é apresentar de forma simples e elegante suas informações, projetos, currículo e permitir que visitantes entrem em contato.
+Este é um projeto de portfólio pessoal desenvolvido com HTML, CSS e JavaScript. O objetivo é apresentar de forma simples e elegante minhas informações, projetos, currículo e permitir que visitantes entrem em contato.
 
 ## Tecnologias Utilizadas
 
