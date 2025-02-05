@@ -1,0 +1,101 @@
+/* css/style.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar customizada */
+.navbar {
+  padding: 1rem 2rem;
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.nav-link:hover, .navbar-brand:hover {
+  color: #f39c12 !important;
+}
+
+
+/* Header (Home) com efeito de overlay */
+header {
+  position: relative;
+  background-color: #000000c2; /* Define uma cor de fundo (nesse caso, um cinza escuro) */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+header .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+header p {
+  font-size: 1.25rem;
+}
+
+/* Título das seções */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #f39c12;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Estilo personalizado para a imagem do Sobre Mim */
+.perfil-img {
+  width: 200px;       /* Define a largura desejada */
+  height: 200px;      /* Define a altura, para garantir que fique quadrada */
+  object-fit: cover;  /* Garante que a imagem preencha o espaço sem distorção */
+  /* Opcional: adicione uma borda para destaque
+  border: 3px solid #f39c12; */
+}
+
+/* Formulário de contato */
+.contact-form input,
+.contact-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.25);
+}
+
+/* Rodapé */
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 1rem 0;
+}
+footer a {
+  color: #f39c12;
+}
