@@ -99,3 +99,13 @@ footer {
 footer a {
   color: #f39c12;
 }
+
+.custom-link {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit;        /* Evita a cor azul padrão, herdando a cor do pai */
+}
+
+.custom-link:hover {
+  cursor: pointer;       /* Muda o cursor para uma mãozinha */
+  text-decoration: none; /* Garante que o sublinhado não apareça ao passar o mouse */
+}
