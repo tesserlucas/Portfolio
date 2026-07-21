@@ -264,6 +264,51 @@
               </a>
             </article>
           </div>
+
+        </div>
+
+        <!-- O projeto com vídeo fica em uma linha separada para não alterar a altura dos três cards acima. -->
+        <div class="row g-4 pt-4">
+          <!-- Projeto 04: troque o nome, a descrição e as tecnologias quando desejar. -->
+         <div class="col-12 projeto-destaque" data-aos="fade-up">
+            <article class="project-card project-card-video">
+              <div class="project-number">04</div>
+              <div class="project-icon"><i class="fa-solid fa-circle-play"></i></div>
+
+              <h3>Projeto Gerador Interno de Usuários</h3>
+              <p>Aplicação desktop desenvolvida em Python para automatizar a criação de usuários internos 
+                utilizados no processo de implantação de clientes. O sistema gera automaticamente contas
+                para gestores, caixas, garçons, atendentes (SmartPOS) e KDS, criando senhas aleatórias e 
+                seguras para cada usuário. Além da geração automática, a aplicação permite copiar 
+                rapidamente os acessos, exportar os dados para PDF e Excel, além de manter um histórico 
+                persistente dos últimos usuários gerados. O projeto foi desenvolvido para reduzir tarefas 
+                repetitivas, minimizar erros manuais e agilizar o processo operacional da equipe.</p>
+
+
+              <div class="project-video">
+                <video controls preload="metadata" playsinline aria-label="Vídeo demonstrativo do projeto 04">
+                  <!-- Coloque o arquivo MP4 na pasta videos com o nome projeto-04.mp4. -->
+                  <source src="videos/projeto-04.mp4" type="video/mp4">
+                  Seu navegador não conseguiu reproduzir o vídeo.
+                </video>
+              </div>
+
+              <div class="project-tags">
+                <span>Python</span>
+              </div>
+
+              <div class="project-links">
+                <a href="videos/projeto-04.mp4" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Assistir vídeo <i class="fa-solid fa-play"></i>
+                </a>
+
+                <!-- Quando o repositório estiver pronto, substitua este span por um link <a>. -->
+                <a href=""
+                  GitHub em breve <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
 
         <div class="github-cta" data-aos="fade-up">
@@ -293,22 +338,55 @@
             <div>
               <span class="resume-label"><i class="fa-regular fa-file-pdf"></i> Documento em PDF</span>
               <h3>Currículo — Lucas Busa Tesser</h3>
-              <p>Visualize diretamente na página ou faça o download para consultar depois.</p>
+              <p>Visualize diretamente na página ou abra o arquivo em uma nova aba.</p>
             </div>
-            <a href="./curriculo/CV_Lucas Busa Tesser.pdf" class="btn btn-primary-custom" download="Curriculo_Lucas_Tesser.pdf">
-              <i class="fa-solid fa-download"></i>
-              Baixar currículo
-            </a>
+
+            <div class="resume-actions">
+              <a href="./curriculo/CV_Lucas%20Busa%20Tesser.pdf" class="btn btn-secondary-custom" target="_blank" rel="noopener noreferrer">
+                <i class="fa-regular fa-eye"></i>
+                Abrir currículo
+              </a>
+              <a href="./curriculo/CV_Lucas%20Busa%20Tesser.pdf" class="btn btn-primary-custom" download="Curriculo_Lucas_Tesser.pdf">
+                <i class="fa-solid fa-download"></i>
+                Baixar currículo
+              </a>
+            </div>
           </div>
 
           <div class="resume-viewer">
-            <object data="./curriculo/CV_Lucas Busa Tesser.pdf" type="application/pdf" width="100%" height="650">
+            <object
+              class="pdf-desktop-preview"
+              data="./curriculo/CV_Lucas%20Busa%20Tesser.pdf#view=FitH"
+              type="application/pdf"
+              width="100%"
+              height="650"
+              aria-label="Pré-visualização do currículo de Lucas Tesser"
+            >
               <div class="pdf-fallback">
                 <i class="fa-regular fa-file-pdf"></i>
-                <p>Seu navegador não conseguiu exibir o PDF.</p>
-                <a href="./curriculo/CV_Lucas Busa Tesser.pdf" target="_blank" rel="noopener noreferrer">Abrir currículo em uma nova aba</a>
+                <h4>Pré-visualização indisponível</h4>
+                <p>Este navegador não conseguiu exibir o PDF dentro da página.</p>
+                <a href="./curriculo/CV_Lucas%20Busa%20Tesser.pdf" class="btn btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                  Abrir currículo
+                </a>
               </div>
             </object>
+
+            <div class="pdf-mobile-fallback">
+              <i class="fa-regular fa-file-pdf"></i>
+              <h4>Currículo em PDF</h4>
+              <p>Alguns navegadores de celular não exibem PDFs dentro da página. Abra o arquivo em uma nova aba ou faça o download.</p>
+              <div class="pdf-mobile-actions">
+                <a href="./curriculo/CV_Lucas%20Busa%20Tesser.pdf" class="btn btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Abrir PDF
+                </a>
+                <a href="./curriculo/CV_Lucas%20Busa%20Tesser.pdf" class="btn btn-secondary-custom" download="Curriculo_Lucas_Tesser.pdf">
+                  <i class="fa-solid fa-download"></i>
+                  Baixar PDF
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
